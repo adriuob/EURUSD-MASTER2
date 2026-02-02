@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Bias Proof | EURUSD MASTER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+        <span class="icon">☀️</span>
+    </button>
+
+    <header class="hero proof-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Daily Bias <span class="accent">Proof</span></h1>
+                <p class="sub-headline">Live accuracy pulled directly from the journal file.</p>
+                <div class="cta-group">
+                    <a href="index.html#proof" class="btn btn-secondary">← Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section proof-details">
+        <div class="container">
+            <h2 class="section-title">Accuracy <span class="accent">Breakdown</span></h2>
+
+            <div class="proof-summary-grid">
+                <div class="stat-card">
+                    <h3 id="proof-winrate">0%</h3>
+                    <p>Win Rate</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="proof-total">0</h3>
+                    <p>Total Anticipations</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="proof-correct">0</h3>
+                    <p>Correct</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="proof-wrong">0</h3>
+                    <p>Wrong</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="proof-nobias">0</h3>
+                    <p>No Bias Days</p>
+                </div>
+            </div>
+
+            <div class="proof-table-card">
+                <div class="table-header">
+                    <h3>Daily Journal</h3>
+                    <p class="table-subtitle">DAY, DATE, ANTICIPATION, BIAS (RESULT)</p>
+                </div>
+                <div class="table-wrap">
+                    <table class="proof-table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Date</th>
+                                <th>Anticipation</th>
+                                <th>Bias (Result)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="journal-proof-body">
+                            <tr><td colspan="4" style="text-align:center;">Loading...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="proof-table-card">
+                <div class="table-header">
+                    <h3>Monthly Bias Winrate</h3>
+                    <p class="table-subtitle">Month-by-month accuracy based on anticipations</p>
+                </div>
+                <div class="table-wrap">
+                    <table class="proof-table monthly-table">
+                        <thead>
+                            <tr>
+                                <th>Month</th>
+                                <th>Total</th>
+                                <th>Right</th>
+                                <th>Wrong</th>
+                                <th>Winrate</th>
+                            </tr>
+                        </thead>
+                        <tbody id="monthly-winrate-body">
+                            <tr><td colspan="5" style="text-align:center;">Loading...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://t.me/adriuob" target="_blank">📢 Contact @adriuob</a>
+                <a href="#">🧠 Paid Channels</a>
+                <a href="#">📊 Performance Recaps</a>
+            </div>
+            <div class="disclaimer">
+                <p><strong>Disclaimer:</strong> Trading involves risk. This service provides market analysis, not financial advice. Past performance does not guarantee future results.</p>
+                <p>&copy; 2026 EURUSD MASTER. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
